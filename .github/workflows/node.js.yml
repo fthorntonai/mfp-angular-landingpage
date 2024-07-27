@@ -32,7 +32,7 @@ jobs:
     - run: mkdir docs
     - run: npm run build --if-present --omit=dev
     - run: ls
-    - run: mv dist/mpf-angular-langingpage/browser/* docs
+    - run: mv dist/mpf-angular-langingpage docs
     - name: Commit files
       run: |
         git config --local user.email "fthornton@phitr.ai"
