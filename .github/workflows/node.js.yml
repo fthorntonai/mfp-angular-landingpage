@@ -30,6 +30,7 @@ jobs:
     - run: npm i @angular/cli
     - run: rm -rf docs
     - run: mkdir docs
+    - run: npm i
     - run: npm run build --if-present --omit=dev
     - run: mv dist/mpf-angular-landingpage/browser/* docs
     - name: Commit files
