@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { APP_BASE_HREF } from '@angular/common';
 import { environment } from '../environments/environment.development';
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,7 @@ import { environment } from '../environments/environment.development';
     BrowserModule,
     AppRoutingModule
   ],
-  providers:[ {provide: APP_BASE_HREF, useValue: environment.baseUrl}], 
+  providers:[ {provide: APP_BASE_HREF, useValue: environment.baseUrl}, provideAnimationsAsync()], 
   bootstrap: [AppComponent]
 })
 export class AppModule { }
