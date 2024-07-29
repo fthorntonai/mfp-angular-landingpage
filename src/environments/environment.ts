@@ -1,6 +1,6 @@
 export const environment = {
     production: true,
-    baseUrl: 'https://fthorntonai.github.io/mpf-angular-landingpage',
+    baseUrl: '/mpf-angular-landingpage/',
     tenantId:'4f711692-5137-4929-8cab-a1a77105e28b',
     clientId:'15a472fd-cfb5-48e7-aae0-418802be3eb1',
     landingClienId:'9a0a73a4-cd5b-4c15-90ae-e30779e30929',
