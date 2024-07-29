@@ -6,7 +6,6 @@ const routes: Routes = [
   { path: 'welcome', loadChildren: () => import('./modules/welcome/welcome.module').then(m => m.WelcomeModule) },
   { path: 'landing', loadChildren: () => import('./modules/landing/landing.module').then(m => m.LandingModule) },
   { path: 'profile', loadChildren: () => import('./modules/profile/profile.module').then(m => m.ProfileModule) },
-{path:'**',component:PageNotFoundComponent}
 
 
 ];
